@@ -12,11 +12,15 @@ namespace DictionaryExample
 
             //add elements
             names.Add(1, "Shihab");
-            names.Add(1, "Mishu");
-            names.Add(1, "Mithila");
-            names.Add(1, "Rayhan");
+            names.Add(2, "Mishu");
+            names.Add(3, "Mithila");
+            names.Add(4, "Rayhan");
 
-
+            //Iterate the the dictionary
+            foreach(KeyValuePair<int,string> kv in names)
+            {
+                Console.WriteLine(kv.Key + " " + kv.Value);
+            }
 
         }
     }
